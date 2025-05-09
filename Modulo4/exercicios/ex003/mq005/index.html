@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-queries.css">
+    <title>Site com Media Query</title>
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu site</h1>
+        <span id="iconMenu" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="topicos">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="">Novidades</a></li>
+                <li><a href="">Jogos</a></li>
+                <li><a href="">Formula 1</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore amet ea asperiores, at, maiores qui nobis suscipit totam ratione id assumenda non modi repellat magnam et officiis impedit necessitatibus. Nobis!
+            Id blanditiis esse, velit nostrum sequi ut quae pariatur illo praesentium perferendis enim beatae fugiat animi. Neque est dolor ducimus ullam eos reprehenderit! A quae reiciendis quis, ad nisi recusandae.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore amet ea asperiores, at, maiores qui nobis suscipit totam ratione id assumenda non modi repellat magnam et officiis impedit necessitatibus. Nobis!
+            Id blanditiis esse, velit nostrum sequi ut quae pariatur illo praesentium perferendis enim beatae fugiat animi. Neque est dolor ducimus ullam eos reprehenderit! A quae reiciendis quis, ad nisi recusandae.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore amet ea asperiores, at, maiores qui nobis suscipit totam ratione id assumenda non modi repellat magnam et officiis impedit necessitatibus. Nobis!
+            Id blanditiis esse, velit nostrum sequi ut quae pariatur illo praesentium perferendis enim beatae fugiat animi. Neque est dolor ducimus ullam eos reprehenderit! A quae reiciendis quis, ad nisi recusandae.</p>
+        </article>
+    </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                topicos.style.display = 'block'
+            } else {
+                topicos.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (topicos.style.display == 'block') {
+                topicos.style.display = 'none'
+            } else {
+                topicos.style.display = 'block'
+            }
+            
+        }
+    </script>
+</body>
+</html>

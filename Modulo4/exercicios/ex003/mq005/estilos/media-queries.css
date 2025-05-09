@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+    span#iconMenu {
+        display: none;
+    }
+
+    menu {
+        display: block;
+        background-color: black;
+    }
+
+    menu li {
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    menu a {
+        border: none;
+    }
+
+    menu a:hover {
+        background-color: white;
+        color: black;
+    }
+
+    main {
+        width: 700px;
+    }
+}

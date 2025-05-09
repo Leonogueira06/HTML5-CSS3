@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    
+    <style>
+        body{
+            background-color: beige;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        main{
+            background-color: orangered;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 10px 12px 10px rgba(0, 0, 0, 0.374);
+            border-radius: 20px;
+        }
+        article{
+            background-color: rgba(245, 152, 39, 0.695);
+        }
+        nav{
+            padding: 3px;
+            box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.374);
+            border-radius: 20px;
+        }
+        nav > a{
+            color: white;
+            margin: 100px;
+            text-decoration: none;
+        }
+        nav > a:hover{
+            color: blue;
+        }
+        header{
+            background-color: rgba(0, 0, 0, 0.835);
+            color: white;
+            margin: 0px;
+            padding: 10px;
+            text-align: center;
+        }
+        header > hr{
+            color: white;
+            margin: 10px;
+        }
+        footer{
+            background-color: rgba(0, 0, 0, 0.835);
+            color: white;
+            padding: 2px;
+            text-align: center;
+            
+        }
+        article{
+            border-radius: 20px;
+            margin: auto;
+            padding: 1px;
+        }
+        article > aside{
+            background-color: rgba(0, 0, 0, 0.835);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <hr>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="Assuntos">
+            <p>Esportes Politíca Tecnologia</p>
+        </section>
+        <section id="Noticias">
+            <article>
+                <h2>Noticias Sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, sunt cum eum id tempora nam accusamus, molestias incidunt aut non asperiores illum quam error, totam suscipit? Ex commodi reiciendis nemo.</p>
+                <aside>
+                    <p>Artigo Escrito por Jorginho</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Projeto de Leonardo</p>
+    </footer>
+</body>
+</html>

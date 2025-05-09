@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+
+    <style>
+        div.container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: flex-start;
+
+            height: 400px;
+
+            background-color: lightsalmon;
+        }
+
+        div.itens {
+
+            padding: 20px;
+
+            background-color: lightskyblue;
+            border: 1px solid black;
+        }
+
+        div#i1{
+            order: -2;
+            align-self: flex-start;
+        }
+        div#i2{
+            order: -5;
+            align-self: center;
+        }
+        div#i3{
+            order: 10;
+            align-self: stretch;
+        }
+        div#i4{
+            order: -15;
+            align-self: flex-end;
+        }
+        div#i5{
+            order: 5;
+            align-self: center;
+        }
+        div#i6{
+            order: 0;
+            align-self: stretch;
+        }
+        div#i7{
+            order: 1;
+            align-self: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="itens" id="i1">A</div>
+        <div class="itens" id="i2">B</div>
+        <div class="itens" id="i3">C</div>
+        <div class="itens" id="i4">D</div>  
+        <div class="itens" id="i5">E</div>
+        <div class="itens" id="i6">F</div>
+        <div class="itens" id="i7">G</div>
+
+    </div>
+</body>
+</html>

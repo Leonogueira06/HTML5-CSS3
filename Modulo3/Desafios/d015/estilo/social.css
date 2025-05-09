@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
+img{
+    width: 100vw;
+
+}
+
+a{
+    display: block;
+    padding: 20px;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: none;
+    background-image: linear-gradient(to bottom, yellow, rgba(247, 247, 115, 0.993)) ;
+    color: black;
+}
+
+a:hover{
+    background-image: linear-gradient(to bottom, red, darkred);
+}
